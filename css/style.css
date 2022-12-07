@@ -1,0 +1,110 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.main-wrapper {
+  height: 100%;
+  gap: calc(1vw + 1vh);
+  background-image: url("../assets/img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.slider {
+  transform: rotate(11deg);
+  overflow: visible;
+}
+.slider:nth-child(odd) {
+  transform: rotate(-169deg);
+}
+.slider:nth-child(odd) .slider__img {
+  transform: rotate(180deg);
+}
+
+.slider .slider__wrapper {
+  transition: 0.6s cubic-bezier(0.2, 0.6, 0, 1) !important;
+  will-change: transform;
+}
+
+.slider__item {
+  width: 20vw;
+  margin-bottom: calc(calc(1vw + 1vh) * 2.5);
+  cursor: pointer;
+  transition: transform 1.25s ease-out;
+  opacity: 0.8;
+  will-change: transform;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 0 30px 10px;
+}
+.slider__item:hover {
+  transform: scale(1.03);
+  transition: 0.6s;
+  opacity: 1;
+}
+
+.slider__img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 8px;
+}
+.slider__img-first {
+  background-image: url("../assets/img/duo-min.png");
+}
+.slider__img-second {
+  background-image: url("../assets/img/first-min.png");
+}
+.slider__img-third {
+  background-image: url("../assets/img/h-min.jpeg");
+}
+.slider__img-forth {
+  background-image: url("../assets/img/second-min.png");
+}
+
+/*# sourceMappingURL=style.css.map */
